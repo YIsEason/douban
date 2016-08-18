@@ -1,26 +1,564 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
-
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>终于找到你了</title>
-  </head>
-
-  <body>
-    <h1>进入github很激动</h1>
-  </body>
+<head>
+	<title>豆瓣</title>
+	<meta charset="utf-8">
+	<link type="text/css" href="stylesheets/index.css" rel="stylesheet">
+</head>
+<body>
+	<div class="header m0"><!--导航部分-->
+		<div class="logo fl ml-80 mt-20"></div>
+		<input class="ml-20 mt-30 fl" type="text" name="your" placeholder="书籍、电影、音乐、小组、小站、成员"/>
+		<ul class="mt-30 ml-20 fl b">
+			<li><a class="c-1" href="#book">读书</a></li>
+			<li><a class="c-2" href="#movie">电影</a></li>
+			<li><a class="c-3" href="#music">音乐</a></li>
+			<li><a class="c-4" href="#teem">小组</a></li>
+			<li><a class="c-5" href="#country">同城</a></li>
+			<li><a class="c-6" href="#take">FM</a></li>
+			<li><a class="c-7" href="#hot">東西</a></li>
+			<li><a class="c-8" href="#sj">市集</a></li>
+		</ul>
+	</div>
+	<div class="content m0">
+		<div class="con-logo ml-100 fl"></div>
+		<p class="ml-40 mt-30 fl fs-30">豆瓣4.0<br/><span class="fs-10">我们的精神部落</span></p>
+		<div class="demo"><span>下载豆瓣app</span></div>
+		<a href="#"><div class="icon"></div></a>
+		<div class="form fl ml-80">
+			<input class="content-in ml-80 mt-10" type="text" name="yourname" placeholder="邮箱/手机号"/>
+			<input class="content-in ml-80 mt-10" type="text" name="your" placeholder="密码"/>
+			<input class="sub-demo ml-80 mt-10 fl" type="submit" value="登录豆瓣">
+			<input class="sub-demo1 ml-10 mt-10 fl" type="submit" value="注册账号">
+		</div>
+	</div>
+	<div class="hot mt-30 ml-150"></div><!--热点内容-->
+		<a name="hot"></a>
+		<p class="p-font ml-150">热点内容......(更多)</p>
+		<div class="hot-demo ml-150">
+		<ul class="fl">
+			<li class="display fl"><img src="images/hot1.png"/><br><span>绿皮茄子小姐的爱情故事</span></li>
+			<li class="fl ml-5"><img src="images/hot2.png"/><br><span>彼时风景</span></li>
+			<li class="display fl clear"><img src="images/hot3.png"/><br><span>武汉老街</span></li>
+			<li class="fl ml-5"><img src="images/hot4.png"/><br><span>光影意大利</span></li>
+		</ul>
+		<div class="hot-demo1 fl">
+			<p><a href="#">旅馆里的超能力者</a></p>
+			<p class="mt-20 "><a href="#">九州东北边的一些小地方</a></p>
+			<p class="mt-20"><a href="#">最漫长的前戏</a></p>
+			<p class="mt-20"><a href="#">旅馆里的超能力者</a></p>
+		</div>
+		<div class="hot-demo2 fl">
+			<div class="hot-pic"></div>
+			<p class="mt-20 "><a href="#">九州东北边的一些小地方</a></p>
+			<p class="mt-20"><a href="#">旅馆里的超能力者</a></p>
+			<p class="mt-20"><a href="#">最漫长的前戏</a></p>
+		</div>
+	</div>
+	<div class="movie m0"><!--电影部分-->
+		<a name="movie"></a>
+		<ul class="fl ml-100">
+			<li class="fs-20 mt-30"><a href="#">电影</a></li>
+			<li><a href="#">影讯</a></li>
+			<li><a href="#">选电影</a></li>
+			<li><a href="#">电视剧</a></li>
+			<li><a href="#">排行榜</a></li>
+			<li><a href="#">分类</a></li>
+			<li><a href="#">影评</a></li>
+		</ul>
+		<div class="m-demo fl">
+			<p class="fs-20 ml-80 mt-20">正在热映......</p><br/>
+		<ul class="fl ml-80">
+			<li class="display fl"><img src="images/movie1.png"/><br><span class="ml-20">使徒行者</span>
+			<br/>
+				<input type="submit" value="选座购票">
+			</li>
+			<li class="display fl ml-10"><img src="images/movie2.png"/><br><span class="ml-20">盗墓笔记</span>
+			<br/>
+				<input type="submit" value="选座购票">
+			</li>
+			<li class="display fl ml-10"><img src="images/movie3.png"/><br><span class="ml-10">微微一笑很倾城</span>
+			<br/>
+				<input type="submit" value="选座购票">
+			</li>
+			<li class="fl ml-10"><img src="images/movie4.png"/><br><span class="ml-10">爱宠大机密</span>
+			<br/>
+				<input type="submit" value="选座购票">
+			</li>
+			<li class="display clear fl"><img src="images/movie5.png"/><br/><span class="ml-10">我们诞生在中国</span>
+			<br/>
+				<input type="submit" value="选座购票">
+			</li>
+			<li class="display fl ml-10"><img src="images/movie6.png"/><br><span class="ml-40">危城</span>
+			<br/>
+				<input type="submit" value="选座购票">
+			</li>
+			<li class="display fl ml-10"><img src="images/movie7.png"/><br><span class="ml-20">海洋之歌</span>
+			<br/>
+				<input type="submit" value="选座购票">
+			</li>
+			<li class="fl ml-10"><img src="images/movie8.png"/><br><span class="ml-10">那件疯狂小事</span>
+			<br/>
+				<input type="submit" value="选座购票">
+			</li>
+		</ul>
+		</div>
+		<div class="movie-demo fl ml-20">
+			<p class="ml-40 fs-20 mt-20">影片分类......</p>
+			<ul class="fl ml-40">
+				<li><a href="#">爱情</a></li>
+				<li><a href="#">动作</a></li>
+				<li><a href="#">惊悚</a></li>
+				<li><a href="#">台湾</a></li>
+				<li><a href="#">香港</a></li>
+				<li><a href="#">恐怖</a></li>
+			</ul>
+			<ul class="fl ml-40">
+				<li><a href="#">喜剧</a></li>
+				<li><a href="#">经典</a></li>
+				<li><a href="#">文艺</a></li>
+				<li><a href="#">战争</a></li>
+				<li><a href="#">英国</a></li>
+				<li><a href="#">德国</a></li>
+			</ul>
+			<ul class="fl ml-40">
+				<li><a href="#">动画</a></li>
+				<li><a href="#">悬疑</a></li>
+				<li><a href="#">搞笑</a></li>
+				<li><a href="#">短片</a></li>
+				<li><a href="#">中国</a></li>
+				<li><a href="#">意大利</a></li>
+			</ul>
+			<ul class="fl ml-40">
+				<li><a href="#">剧情</a></li>
+				<li><a href="#">青春</a></li>
+				<li><a href="#">记录</a></li>
+				<li><a href="#">美国</a></li>
+				<li><a href="#">法国</a></li>
+			</ul>
+			<ul class="fl ml-40">
+				<li><a href="#">科幻</a></li>
+				<li><a href="#">犯罪</a></li>
+				<li><a href="#">励志</a></li>
+				<li><a href="#">日本</a></li>
+				<li><a href="#">韩国</a></li>
+			</ul>
+			<p class="clear fl ml-40 fs-20 mt-20">近期热门......</p>
+			<ol class="clear ml-60" type="1">
+				<li><a href="#">小姐</a></li>
+				<li><a href="#">一个叫欧威的男人</a></li>
+				<li><a href="#">家族之苦</a></li>
+				<li><a href="#">奈斯侦探</a></li>
+				<li><a href="#">完美陌生人</a></li>
+				<li><a href="#">金钱怪兽</a></li>
+				<li><a href="#">初恋这首情歌</a></li>
+				<li><a href="#">寻：电影版</a></li>
+			</ol>
+		</div>
+		<br/>
+		<div class="movie-bg ml-100"></div>
+	</div>
+	<div class="teem m0"><!--小组部分-->
+		<a name="teem"></a>
+		<ul class="fl ml-100">
+			<li class="fs-20 mt-30"><a href="#">小组</a></li>
+			<li><a href="#">精选</a></li>
+			<li><a href="#">文化</a></li>
+			<li><a href="#">行摄</a></li>
+			<li><a href="#">娱乐</a></li>
+			<li><a href="#">时尚</a></li>
+			<li><a href="#">生活</a></li>
+			<li><a href="#">科技</a></li>
+		</ul>
+		<div class="tm-demo fl ml-80">
+			<p class="ml-40 fs-20 mt-20">热门小组......</p>
+			<ul class="fl ml-100">
+				<li class="list1">十万斤为什么</li>
+				<li class="list2">我有极品前男友</li>
+				<li class="list3">街头偶耳听</li>
+				<li class="list4">Skins</li>
+				<li class="list5">看电影</li>
+				<li class="list6">不想90后的90后</li>
+			</ul>
+			<ul class="fl ml-80">
+				<li class="list7">不正常人类研究</li>
+				<li class="list8">我的暗恋唱成这首歌</li>
+				<li class="list9">就怕流氓有文化</li>
+				<li class="list10">帮帮组</li>
+				<li class="list11">我们都爱大长腿</li>
+				<li class="list12">每次出门我都很纠结</li>
+			</ul>
+		</div>
+		<div class="teem-demo fl">
+			<p class="clear fl ml-40 fs-20 mt-20">近期热门......</p><br/>
+			<span class="clear fl ml-40">兴趣>></span>
+			<ul class="fl">
+				<li><a href="#">旅行</a></li>
+				<li><a href="#">摄影</a></li>
+				<li><a href="#">影视</a></li>
+				<li><a href="#">文学</a></li>
+				<li><a href="#">游戏</a></li>
+				<li><a href="#">动漫</a></li><br/>
+				<li><a href="#">运动</a></li>
+				<li><a href="#">戏曲</a></li>
+				<li><a href="#">桌游</a></li>
+				<li><a href="#">怪癖</a></li>
+			</ul>
+			<span class="clear fl ml-40">兴趣>></span>
+			<ul class="fl">
+				<li><a href="#">旅行</a></li>
+				<li><a href="#">摄影</a></li>
+				<li><a href="#">影视</a></li>
+				<li><a href="#">文学</a></li>
+				<li><a href="#">游戏</a></li>
+				<li><a href="#">动漫</a></li><br/>
+				<li><a href="#">运动</a></li>
+				<li><a href="#">戏曲</a></li>
+				<li><a href="#">桌游</a></li>
+				<li><a href="#">怪癖</a></li>
+			</ul>
+			<span class="clear fl ml-40">兴趣>></span>
+			<ul class="fl">
+				<li><a href="#">旅行</a></li>
+				<li><a href="#">摄影</a></li>
+				<li><a href="#">影视</a></li>
+				<li><a href="#">文学</a></li>
+				<li><a href="#">游戏</a></li>
+				<li><a href="#">动漫</a></li><br/>
+				<li><a href="#">运动</a></li>
+				<li><a href="#">戏曲</a></li>
+				<li><a href="#">桌游</a></li>
+				<li><a href="#">怪癖</a></li>
+			</ul>
+			<span class="clear fl ml-40">兴趣>></span>
+			<ul class="fl">
+				<li><a href="#">旅行</a></li>
+				<li><a href="#">摄影</a></li>
+				<li><a href="#">影视</a></li>
+				<li><a href="#">文学</a></li>
+				<li><a href="#">游戏</a></li>
+				<li><a href="#">动漫</a></li><br/>
+				<li><a href="#">运动</a></li>
+				<li><a href="#">戏曲</a></li>
+				<li><a href="#">桌游</a></li>
+				<li><a href="#">怪癖</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="movie m0"><!--图书部分-->
+		<a name="book"></a>
+		<ul class="fl ml-100">
+			<li class="fs-20 mt-30"><a href="#">读书</a></li>
+			<li><a href="#">影讯</a></li>
+			<li><a href="#">选电影</a></li>
+			<li><a href="#">电视剧</a></li>
+			<li><a href="#">排行榜</a></li>
+			<li><a href="#">分类</a></li>
+			<li><a href="#">影评</a></li>
+		</ul>
+		<div class="book-demo fl">
+			<p class="fs-20 ml-80 mt-20">新书速递......</p><br/>
+		<ul class="fl ml-80">
+			<li class="display fl"><img src="images/movie1.png"/><br><span class="ml-20">使徒行者</span>
+			<br/>
+				<input type="submit" value="选座购票">
+			</li>
+			<li class="display fl ml-10"><img src="images/movie2.png"/><br><span class="ml-20">盗墓笔记</span>
+			<br/>
+				<input type="submit" value="选座购票">
+			</li>
+			<li class="display fl ml-10"><img src="images/movie3.png"/><br><span class="ml-10">微微一笑很倾城</span>
+			<br/>
+				<input type="submit" value="选座购票">
+			</li>
+			<li class="fl ml-10"><img src="images/movie4.png"/><br><span class="ml-10">爱宠大机密</span>
+			<br/>
+				<input type="submit" value="选座购票">
+			</li>
+			<li class="display clear fl"><img src="images/movie5.png"/><br/><span class="ml-10">我们诞生在中国</span>
+			<br/>
+				<input type="submit" value="选座购票">
+			</li>
+			<li class="display fl ml-10"><img src="images/movie6.png"/><br><span class="ml-40">危城</span>
+			<br/>
+				<input type="submit" value="选座购票">
+			</li>
+			<li class="display fl ml-10"><img src="images/movie7.png"/><br><span class="ml-20">海洋之歌</span>
+			<br/>
+				<input type="submit" value="选座购票">
+			</li>
+			<li class="fl ml-10"><img src="images/movie8.png"/><br><span class="ml-10">那件疯狂小事</span>
+			<br/>
+				<input type="submit" value="选座购票">
+			</li>
+		</ul>
+		</div>
+		<div class="teem-demo fl">
+			<p class="clear fl ml-40 fs-20 mt-20">近期热门......</p><br/>
+			<span class="clear fl ml-40">兴趣>></span>
+			<ul class="fl">
+				<li><a href="#">旅行</a></li>
+				<li><a href="#">摄影</a></li>
+				<li><a href="#">影视</a></li>
+				<li><a href="#">文学</a></li>
+				<li><a href="#">游戏</a></li>
+				<li><a href="#">动漫</a></li><br/>
+				<li><a href="#">运动</a></li>
+				<li><a href="#">戏曲</a></li>
+				<li><a href="#">桌游</a></li>
+				<li><a href="#">怪癖</a></li>
+			</ul>
+			<span class="clear fl ml-40">兴趣>></span>
+			<ul class="fl">
+				<li><a href="#">旅行</a></li>
+				<li><a href="#">摄影</a></li>
+				<li><a href="#">影视</a></li>
+				<li><a href="#">文学</a></li>
+				<li><a href="#">游戏</a></li>
+				<li><a href="#">动漫</a></li><br/>
+				<li><a href="#">运动</a></li>
+				<li><a href="#">戏曲</a></li>
+				<li><a href="#">桌游</a></li>
+				<li><a href="#">怪癖</a></li>
+			</ul>
+			<span class="clear fl ml-40">兴趣>></span>
+			<ul class="fl">
+				<li><a href="#">旅行</a></li>
+				<li><a href="#">摄影</a></li>
+				<li><a href="#">影视</a></li>
+				<li><a href="#">文学</a></li>
+				<li><a href="#">游戏</a></li>
+				<li><a href="#">动漫</a></li><br/>
+				<li><a href="#">运动</a></li>
+				<li><a href="#">戏曲</a></li>
+				<li><a href="#">桌游</a></li>
+				<li><a href="#">怪癖</a></li>
+			</ul>
+			<span class="clear fl ml-40">兴趣>></span>
+			<ul class="fl">
+				<li><a href="#">旅行</a></li>
+				<li><a href="#">摄影</a></li>
+				<li><a href="#">影视</a></li>
+				<li><a href="#">文学</a></li>
+				<li><a href="#">游戏</a></li>
+				<li><a href="#">动漫</a></li><br/>
+				<li><a href="#">运动</a></li>
+				<li><a href="#">戏曲</a></li>
+				<li><a href="#">桌游</a></li>
+				<li><a href="#">怪癖</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="music"><!--音乐部分-->
+		<a name="music"></a>
+		<ul class="fl ml-100">
+			<li class="fs-20 mt-30"><a href="#">音乐</a></li>
+			<li><a href="#">音乐人</a></li>
+			<li><a href="#">专题</a></li>
+			<li><a href="#">排行榜</a></li>
+			<li><a href="#">乐评</a></li>
+			<li><a href="#">歌单</a></li>
+			<li><a href="#">豆瓣FM</a></li>
+		</ul>
+		<div class="music-demo fl ml-100">
+			<p class="mt-20 fs-20">豆瓣新碟榜</p>
+			<ul class="ml-40 fl">
+				<li><img src="images/m1.png"/><br/><span class="ml-20">小梦大半</span></li>
+				<li><img src="images/m5.png"/><br/><span class="ml-20">自传</span></li>
+				<li><img src="images/m9.png"/><br/><span class="ml-20">李志北京</span></li>
+			</ul>
+			<ul class="ml-40 fl">
+				<li><img src="images/m2.png"/><br/><span class="ml-20">贼</span></li>
+				<li><img src="images/m6.png"/><br/><span class="ml-20">Suicide</span></li>
+				<li><img src="images/m10.png"/><br/><span class="ml-20">GENERATION</span></li>
+			</ul>
+			<ul class="ml-40 fl">
+				<li><img src="images/m3.png"/><br/><span class="ml-20">wesonme</span></li>
+				<li><img src="images/m7.png"/><br/><span class="ml-20">醒</span></li>
+				<li><img src="images/m11.png"/><br/><span class="ml-20">民谣</span></li>
+			</ul>
+			<ul class="ml-40 fl">
+				<li><img src="images/m4.png"/><br/><span class="ml-20">林夕</span></li>
+				<li><img src="images/m8.png"/><br/><span class="ml-20">蓝调</span></li>
+				<li><img src="images/m12.png"/><br/><span class="ml-20">是梦</span></li>
+			</ul>
+		</div>
+		<div class="mu-demo fl ml-100">
+			<p class="clear fl ml-40 fs-20 mt-20">近期热门......</p>
+			<ul class="fl ml-100">
+				<li class="list1">十万斤为什么</li>
+				<li class="list2">我有极品前男友</li>
+				<li class="list3">街头偶耳听</li>
+				<li class="list4">Skins</li>
+				<li class="list5">看电影</li>
+				<li class="list6">不想90后的90后</li>
+			</ul>
+		</div>
+	</div>
+	<div class="music"><!--市集部分-->
+		<a name="sj"></a>
+		<ul class="fl ml-100">
+			<li class="fs-20 mt-30 fl"><a href="#">市集</a></li>
+			<li><a href="#">音乐人</a></li>
+			<li><a href="#">专题</a></li>
+			<li><a href="#">排行榜</a></li>
+			<li><a href="#">乐评</a></li>
+			<li><a href="#">歌单</a></li>
+			<li><a href="#">豆瓣FM</a></li>
+		</ul>
+		<div class="sj fl ml-150">
+			<p class="mt-20 fs-20">热门商品</p>
+			<ul class="fl">
+				<li><img src="images/p384495.jpg"/><br/><span class="ml-100">户外用品</span></li>
+				<li><img src="images/p321383.jpg"/><br/><span class="ml-100">户外用品</span></li>
+			</ul>
+			<ul class="fl ml-10">
+				<li><img src="images/p384740.jpg"/><br/><span class="ml-100">户外用品</span></li>
+				<li><img src="images/p381048.jpg"/><br/><span class="ml-100">户外用品</span></li>
+			</ul>
+		</div>
+		<div class="sj-demo fl">
+			<p class="mt-20 fs-20">热门店铺</p>
+			<ul class="fl ml-80">
+				<li class="list7">不正常人类研究</li>
+				<li class="list8">我的暗恋唱成这首歌</li>
+				<li class="list9">就怕流氓有文化</li>
+				<li class="list10">帮帮组</li>
+				<li class="list11">我们都爱大长腿</li>
+				<li class="list12">每次出门我都很纠结</li>
+			</ul>
+		</div>
+	</div>
+	<div class="music"><!--拍部分-->
+		<a name="take"></a>
+		<ul class="clear fl ml-100">
+			<li class="fs-20 mt-30 fl"><a href="#">-拍-</a></li>
+			<li><a href="#">音乐人</a></li>
+			<li><a href="#">专题</a></li>
+			<li><a href="#">排行榜</a></li>
+			<li><a href="#">乐评</a></li>
+			<li><a href="#">歌单</a></li>
+			<li><a href="#">豆瓣FM</a></li>
+		</ul>
+		<div class="sj fl ml-150">
+			<p class="mt-20 fs-20">写真摄影</p>
+			<ul class="fl">
+				<li><img src="images/p364315.jpg"/><br/><span class="ml-100">户外用品</span></li>
+				<li><img src="images/p385331.jpg"/><br/><span class="ml-100">户外用品</span></li>
+			</ul>
+			<ul class="fl ml-10">
+				<li><img src="images/p378868.jpg"/><br/><span class="ml-100">户外用品</span></li>
+				<li><img src="images/p392952.jpg"/><br/><span class="ml-100">户外用品</span></li>
+			</ul>
+		</div>
+		<div class="p-demo fl">
+			<p class="clear fl ml-40 fs-20 mt-20">标签......</p><br/>
+			<span class="clear fl ml-20">兴趣>></span>
+			<ul class="fl">
+				<li><a href="#">旅行</a></li>
+				<li><a href="#">摄影</a></li>
+				<li><a href="#">影视</a></li>
+				<li><a href="#">文学</a></li>
+				<li><a href="#">游戏</a></li>
+				<li><a href="#">动漫</a></li><br/>
+				<li><a href="#">运动</a></li>
+				<li><a href="#">戏曲</a></li>
+				<li><a href="#">桌游</a></li>
+				<li><a href="#">怪癖</a></li>
+			</ul>
+			<span class="clear fl ml-20">兴趣>></span>
+			<ul class="fl">
+				<li><a href="#">旅行</a></li>
+				<li><a href="#">摄影</a></li>
+				<li><a href="#">影视</a></li>
+				<li><a href="#">文学</a></li>
+				<li><a href="#">游戏</a></li>
+				<li><a href="#">动漫</a></li><br/>
+				<li><a href="#">运动</a></li>
+				<li><a href="#">戏曲</a></li>
+				<li><a href="#">桌游</a></li>
+				<li><a href="#">怪癖</a></li>
+			</ul>
+			<span class="clear fl ml-20">兴趣>></span>
+			<ul class="fl">
+				<li><a href="#">旅行</a></li>
+				<li><a href="#">摄影</a></li>
+				<li><a href="#">影视</a></li>
+				<li><a href="#">文学</a></li>
+				<li><a href="#">游戏</a></li>
+				<li><a href="#">动漫</a></li><br/>
+				<li><a href="#">运动</a></li>
+				<li><a href="#">戏曲</a></li>
+				<li><a href="#">桌游</a></li>
+				<li><a href="#">怪癖</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="country clear m0"><!--同城部分-->
+		<a name="country"></a>
+		<ul class="fl ml-100">
+			<li class="fs-20 mt-30"><a href="#">同城</a></li>
+			<li><a href="#">近期活动</a></li>
+			<li><a href="#">主办方</a></li>
+			<li><a href="#">舞台剧</a></li>
+		</ul>
+		<div class="country-demo fl ml-100">
+			<p class="ml-40 fs-20 mt-20">本周热门活动......</p>
+			<ul class="fl ml-100">
+				<li class="list1">十万斤为什么</li>
+				<li class="list2">我有极品前男友</li>
+			</ul>
+			<ul class="fl ml-100">
+				<li class="list5">看电影</li>
+				<li class="list6">不想90后的90后</li>
+			</ul>
+		</div>
+		<div class="country-demo2 fl ml-100">
+			<p class="mt-20 fs-20">活动标签....</p>
+			<span class="clear fl ml-20">兴趣>></span>
+			<ul class="fl">
+				<li><a href="#">旅行</a></li>
+				<li><a href="#">摄影</a></li>
+				<li><a href="#">影视</a></li>
+				<li><a href="#">文学</a></li>
+				<li><a href="#">游戏</a></li>
+				<li><a href="#">动漫</a></li><br/>
+				<li><a href="#">运动</a></li>
+				<li><a href="#">戏曲</a></li>
+				<li><a href="#">桌游</a></li>
+				<li><a href="#">怪癖</a></li>
+			</ul>
+			<span class="clear fl ml-20">兴趣>></span>
+			<ul class="fl">
+				<li><a href="#">旅行</a></li>
+				<li><a href="#">摄影</a></li>
+				<li><a href="#">影视</a></li>
+				<li><a href="#">文学</a></li>
+				<li><a href="#">游戏</a></li>
+				<li><a href="#">动漫</a></li><br/>
+				<li><a href="#">运动</a></li>
+				<li><a href="#">戏曲</a></li>
+				<li><a href="#">桌游</a></li>
+				<li><a href="#">怪癖</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="foot mt-30 ml-150"></div>
+	<div class="border"></div>
+	<div class="footer mt-20 m0"><!--尾部-->
+		<ul class="fr mr-190">
+			<li><a href="#">关于豆瓣</a></li>
+			<li><a href="#">在豆瓣工作</a></li>
+			<li><a href="#">联系我们</a></li>
+			<li><a href="#">免费声明</a></li>
+			<li><a href="#">帮助中心</a></li>
+			<li><a href="#">移动应用</a></li>
+			<li><a href="#">豆瓣广告</a></li>
+		</ul>
+		<span class="ml-100">© 2005－2016 douban.com, all rights reserved 北京豆网科技有限公司</span><br/>
+		<span class="ml-100">京ICP证090015号 京ICP备11027288号 网络视听许可证0110418号</span><br/>
+		<span class="ml-100">京网文[2015]2026-368号 京公网安备11010502000728  新出网证(京)字129号</span><br/>
+		<span class="ml-100">违法和不良信息举报电话：4008353331</span><br/>
+		<span class="ml-100">中国互联网举报中心 电话：12377</span>
+	</div>
+</body>
 </html>
